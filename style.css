@@ -1,0 +1,43 @@
+body{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  height:100vh;
+  background:#eee;
+}
+
+.board{
+  width:600px;
+  height:600px;
+  display:grid;
+  grid-template-columns:repeat(15,1fr);
+  grid-template-rows:repeat(15,1fr);
+  border:4px solid black;
+}
+
+.cell{
+  border:1px solid #ccc;
+  background:white;
+}
+
+/* Homes */
+.r{background:#e74c3c;}
+.g{background:#27ae60;}
+.b{background:#3498db;}
+.y{background:#f1c40f;}
+
+/* Paths */
+.rp{background:#ff7675;}
+.gp{background:#55efc4;}
+.bp{background:#74b9ff;}
+.yp{background:#ffeaa7;}
+
+/* Center */
+.center{
+  background:conic-gradient(
+    red 0 90deg,
+    green 90deg 180deg,
+    yellow 180deg 270deg,
+    blue 270deg
+  );
+}
